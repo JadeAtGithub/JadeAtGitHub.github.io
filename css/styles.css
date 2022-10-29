@@ -1,0 +1,280 @@
+/*For all*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Cover image*/
+.bg-img {
+  background-image: url("../images/cl.webp");
+  min-height: 942px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*For logo*/
+.bg-img > .container1 {
+  position: absolute;
+  margin: 25px;
+  width: auto;
+}
+
+/*For links*/
+.bg-img > .container2 {
+  overflow: hidden;
+  float: right;
+  margin-top: 38px;
+  margin-right: 3%;
+ 
+}
+
+/*Nav links*/
+.topnav a {
+  padding: 14px 16px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+}
+
+/*House logo*/
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  position: absolute;
+  transition: 0.5s all ease-in-out;
+}
+
+/*Logo upon hover*/
+.logo:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); 
+  transform: rotate(360deg);
+}
+
+/*Heading position*/
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Contact button*/
+button {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  text-decoration: none;
+  color: whitesmoke;  
+  position: relative;
+  padding: 7px 25px;
+  background-color: rgb(104, 175, 207);
+  opacity: 0.9;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+
+/*Button changes colour upon hover*/
+button:hover {
+  background-color: rgb(112, 191, 228);
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.03); 
+}
+
+/*Quote*/
+blockquote {
+  font-size: 1.3em;
+  padding: 10px;
+  font-family:system-ui;
+  font-style: italic;
+  text-align: center;
+}
+
+/*The quote zooms upon hover*/
+blockquote:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+/*Why Web Development is Important text*/
+h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: whitesmoke;
+}
+
+/*Heading zooms upon hover*/
+h1:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+/*Flexbox positioning for the boxes*/
+ .benefits {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 5%;
+} 
+
+/*Optimization for mobile devices*/
+@media only screen and (max-width: 600px) {
+  .benefits {
+  flex-direction: column;
+  }
+}
+
+/*The three container boxes*/
+.benefits .col {
+  margin: 3%;
+  display: inline-block;
+  border-radius: 5%;
+  height: auto;
+}
+
+/*Articles*/
+.benefits > article {
+  width: auto;
+  height: fit-content;
+  margin: 20px 20px 20px 20px;
+  padding-bottom: 15px;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.349);
+  font-family: system-ui;
+}
+
+/*The three images*/
+.benefits > article > img {
+  max-width: 100%;
+  border-radius: 5%;
+  height: auto;
+  padding-bottom: 10px;
+  
+}
+
+/* Zoom on hover for three benefits */
+.col:hover {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.16); 
+}
+
+/*The three benefits' headings*/
+h3 {
+  text-align: center;
+  color: black;
+  padding: 2px;
+  margin: auto;
+  font-family: 'Courier New';
+}
+
+/*The three boxes text*/
+.benefits p {
+  padding: 2px;
+  margin: 5px;
+  color: grey;
+  text-align: center;
+  width: auto;
+}
+
+/*Flexbox for the Visit Us section*/
+.visitus {
+  display: flex;
+  font-family: 'Segoe UI';
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+/*Follow us on social media*/
+h2 {
+  display: block;
+  font-family: 'Segoe UI';
+  text-align: center;
+  font-size: xx-large;
+  transition: 0.2s all ease-in-out;
+}
+
+h2:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+/*The social media icons images*/
+.fa {
+  width: 100px;
+  padding: 20px;
+  transition: 0.2s all ease-in-out;
+}
+
+/*The social media icons' spacing*/
+#test {
+  display: block;
+  text-align: center;
+}
+
+/*The social media icons' zoom on hover*/
+.fa:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+/*Footer and credits*/
+footer {
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Courier New';
+}
+
+/*Footer links*/
+footer > a {
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Courier New';
+  font-size: large;
+  color:darkturquoise;
+}
+
+/*Arrow shape general*/
+.arrow {
+  border: solid black;
+  border-width: 0px 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  scale: 300%;
+  transition: 0.3s all ease-in-out;
+}
+ 
+/*Down arrow facing down*/
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*Spins arrow around*/
+.arrow:hover {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2); 
+    transform: rotate(405deg);
+  }
