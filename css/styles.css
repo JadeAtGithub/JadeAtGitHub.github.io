@@ -40,6 +40,10 @@
   color: black;
 }
 
+.topnav a:hover {
+  color: lightgoldenrodyellow;
+}
+
 /*House logo*/
 .logo {
   cursor: pointer;
@@ -78,6 +82,7 @@ button {
   border: none;
   border-radius: 70px;
   cursor: pointer;
+  margin-left: 30px;
   transition: 0.1s all ease-in-out;
 }
 
