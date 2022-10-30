@@ -88,10 +88,7 @@ button {
 
 /*Button changes colour upon hover*/
 button:hover {
-  background-color: rgb(126, 195, 224);
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.03); 
+  background-color: rgba(140, 211, 241, 0.904);
 }
 
 /*Quote*/
@@ -258,7 +255,7 @@ footer > a {
 /*Arrow shape general*/
 .arrow {
   border: solid black;
-  border-width: 0px 2px 2px 0;
+  border-width: 0px 1.5px 1.5px 0;
   display: inline-block;
   padding: 3px;
   position: absolute;
