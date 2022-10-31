@@ -44,12 +44,12 @@
   color: lightgoldenrodyellow;
 }
 
-/*Top left logo*/
+/*House logo*/
 .logo {
   cursor: pointer;
   margin-right: auto;
   position: absolute;
-  transition: 0.2s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 /*Logo upon hover*/
@@ -220,7 +220,7 @@ h2:hover {
 .fa {
   width: 100px;
   padding: 20px;
-  transition: 0.1s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 /*The social media icons' spacing*/
@@ -249,7 +249,7 @@ footer > a {
   flex-direction: column;
   font-family: 'Courier New';
   font-size: large;
-  color:darkturquoise;
+  color: darkturquoise;
 }
 
 /*Arrow shape general*/
@@ -263,7 +263,7 @@ footer > a {
   left: 50%;
   transform: translate(-50%, -50%);
   scale: 300%;
-  transition: 0s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
  
 /*Down arrow facing down*/
