@@ -20,14 +20,16 @@
   position: absolute;
   margin: 25px;
   width: auto;
+  margin-right: auto;
 }
 
-/*For links*/
+/*For positioning of row of links*/
 .bg-img > .container2 {
   overflow: hidden;
   float: right;
   margin-top: 38px;
   margin-right: 2%;
+  /*margin-right: auto - to make it float to the right*/
 }
 
 /*Nav links*/
@@ -38,18 +40,20 @@
   font-size: 26px;
   text-decoration: none;
   color: black;
+  transition: 0.1s all ease-in-out;
+  overflow: hidden;
 }
 
 .topnav a:hover {
   color: lightgoldenrodyellow;
 }
 
-/*House logo*/
+/*Top left logo*/
 .logo {
+  margin-left: auto;
   cursor: pointer;
-  margin-right: auto;
   position: absolute;
-  transition: 0.2s all ease-in-out;
+  transition: 0.1s all ease-in-out;
 }
 
 /*Logo upon hover*/
@@ -82,8 +86,8 @@ button {
   border: none;
   border-radius: 70px;
   cursor: pointer;
-  margin-left: 30px;
-  transition: 0.1s all ease-in-out;
+  margin-left: 3px;
+  transition: 0s all ease-in-out;
 }
 
 /*Button changes colour upon hover*/
@@ -105,6 +109,7 @@ blockquote:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.2); 
+  color: lightgoldenrodyellow;
 }
 
 /*Why Web Development is Important text*/
@@ -118,6 +123,7 @@ h1 {
 
 /*Heading zooms upon hover*/
 h1:hover {
+  color: lightgoldenrodyellow;
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.2); 
@@ -132,7 +138,7 @@ h1:hover {
 } 
 
 /*Optimization for mobile devices*/
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .benefits {
   flex-direction: column;
   }
@@ -207,13 +213,14 @@ h2 {
   font-family: 'Segoe UI';
   text-align: center;
   font-size: xx-large;
-  transition: 0.2s all ease-in-out;
+  transition: 0s all ease-in-out;
 }
 
 h2:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
+  color: lightskyblue;
 }
 
 /*The social media icons images*/
