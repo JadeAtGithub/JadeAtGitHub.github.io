@@ -40,12 +40,12 @@
   font-size: 26px;
   text-decoration: none;
   color: black;
-  transition: 0.1s all ease-in-out;
+  transition: 0s all ease-in-out;
   overflow: hidden;
 }
 
 .topnav a:hover {
-  color: lightgoldenrodyellow;
+  color: rgb(230, 230, 250);
 }
 
 /*Top left logo*/
@@ -82,11 +82,11 @@ button {
   position: relative;
   padding: 7px 25px;
   background-color: rgb(104, 175, 207);
-  opacity: 0.9;
+  opacity: 0.8;
   border: none;
   border-radius: 70px;
   cursor: pointer;
-  margin-left: 3px;
+  margin-left: 0px;
   transition: 0s all ease-in-out;
 }
 
@@ -142,6 +142,20 @@ h1:hover {
   .benefits {
   flex-direction: column;
   }
+
+  button {
+    margin-left: -20px;
+  }
+}
+
+/*Media query for width range for iPad Air and Surface Pro 7*/
+@media screen and (min-width: 820px) and (max-width: 912px) {
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 }
 
 /*Optimization for Galaxy Fold - the most narrow one*/
@@ -162,11 +176,32 @@ h1:hover {
     text-align: center;
     color: black;
   }
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /*The three container boxes*/
 .benefits .col {
-  margin: 3%;
+  margin: 2%; /*How big the three container boxes are*/
   display: inline-block;
   border-radius: 5%;
   height: auto;
@@ -177,8 +212,8 @@ h1:hover {
   width: auto;
   height: fit-content;
   margin: 20px 20px 20px 20px;
-  padding-bottom: 15px;
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.349);
+  padding-bottom: 20px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.349);
   font-family: system-ui;
 }
 
@@ -240,7 +275,7 @@ h2:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
-  color: lightskyblue;
+  color: rgb(104, 175, 207);
 }
 
 /*The social media icons images*/
