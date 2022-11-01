@@ -150,17 +150,34 @@ h1:hover {
 
 /*Media query for width range for iPad Air and Surface Pro 7*/
 @media screen and (min-width: 820px) and (max-width: 912px) {
-.centered {
+  .centered {
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  }
 }
 
 /*Optimization for Galaxy Fold - the most narrow one*/
 @media screen and (max-width: 300px) {
 
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+  }
+
+  .logo {
+    visibility: visible;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
   blockquote {
     font-size: 1em;
     padding: 10px;
@@ -175,27 +192,6 @@ h1:hover {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: black;
-  }
-
-  .logo {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .topnav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -20px;
-  }
-
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -223,7 +219,6 @@ h1:hover {
   border-radius: 5%;
   height: auto;
   padding-bottom: 10px;
-  
 }
 
 /* Zoom on hover for three benefits */
