@@ -144,6 +144,26 @@ h1:hover {
   }
 }
 
+/*Optimization for Galaxy Fold - the most narrow one*/
+@media screen and (max-width: 300px) {
+
+  blockquote {
+    font-size: 1em;
+    padding: 10px;
+    font-family:system-ui;
+    font-style: italic;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: black;
+  }
+}
+
 /*The three container boxes*/
 .benefits .col {
   margin: 3%;
